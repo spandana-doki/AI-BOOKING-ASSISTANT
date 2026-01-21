@@ -21,7 +21,7 @@ if _PROJECT_ROOT not in sys.path:
 import streamlit as st
 import google.generativeai as genai
 
-from app.chat_logic import get_message_history, handle_user_message
+from chat_logic import get_message_history, handle_user_message
 from app.rag_pipeline import ingest_pdfs
 from app.tools import booking_persistence_tool, email_tool
 from app.admin_dashboard import render_admin_dashboard
